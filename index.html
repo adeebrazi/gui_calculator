@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSHOP ASSIGNMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <form>
+                <div class="result_box">
+                    <input type="text" name="result_box" >
+                </div>
+                <div>
+                    <input type="button" value="AC"onclick="result_box.value =''" class="gray">
+                    <input type="button" value="DE" onclick="result_box.value =result_box.value.slice(0,-1)" class="gray">
+                    <input type="button" value="." onclick="result_box.value +='.'" class="operator">
+                    <input type="button" value="/" onclick="result_box.value +='/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="result_box.value +='7' " class="btn">
+                    <input type="button" value="8" onclick="result_box.value +='8'" class="btn">
+                    <input type="button" value="9" onclick="result_box.value +='9'" class="btn">
+                    <input type="button" value="*" onclick="result_box.value +='*'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="result_box.value +='4'" class="btn">
+                    <input type="button" value="5" onclick="result_box.value +='5'" class="btn">
+                    <input type="button" value="6" onclick="result_box.value +='6'" class="btn">
+                    <input type="button" value="-" onclick="result_box.value +='-'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="result_box.value +='1'" class="btn">
+                    <input type="button" value="2" onclick="result_box.value +='2'" class="btn">
+                    <input type="button" value="3" onclick="result_box.value +='3'" class="btn">
+                    <input type="button" value="+" onclick="result_box.value +='+'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="result_box.value +='00'" class="btn">
+                    <input type="button" value="0" onclick="result_box.value +='0'" class="btn">
+                    <input type="button" value="=" onclick="result_box.value=eval(result_box.value)" class="equal operator">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="centerh">
+        <a class="contact-icon-h doodle1" href="https://www.facebook.com/raziadeeb" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+
+        <a class="contact-icon-h doodle2" href="https://www.instagram.com/raziadeeb" target="_blank">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+
+        <a class="contact-icon-h doodle3" href="https://api.whatsapp.com/send/?phone=916206782574&text&type=phone_number&app_absent=0" target="_blank">
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+
+        <a class="contact-icon-h doodle4" href="https://www.linkedin.com/in/raziadeeb" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a class="contact-icon-h doodle5" href="https://www.x.com/RaziAdeeb" target="_blank">
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+        <div class="footer">
+            Made By Adeeb Razi - AJU/240507
+        </div>
+</div>
+</body>
+</html>
