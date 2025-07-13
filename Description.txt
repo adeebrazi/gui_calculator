@@ -1,0 +1,11 @@
+* Description : Calculator Made Using HTML CSS & JS , With Dual Theme.
+
+* HTML Part : Main Frame Work & Structure.
+
+* CSS Part : Designing & Animation.
+
+* JS Part : Main Working Mechanics For Every Basic Task.
+
+* JS Main Working Part : Takes Expression & Check For The Arthematic Operator & Break the expression from the operator and turns
+it to for loop , then it solves the first part then more further if it has more than 1 operator.
+If No Operator is there it Doesnt Perform Any other expression and pressing = evaluates the final value and display it.

@@ -1,0 +1,135 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+:root{
+     --white-color: black;
+    --black-color:black;
+    --red-colour: red;
+    --green-color: red;
+    --darkback-color: lightgrey;
+    --mainback-color: white;
+    --alter-color: black;
+}
+.darkmode{
+    --alter-color: white;
+    --white-color: white;
+    --black-color:black;
+    --red-colour: red;
+    --green-color: rgb(109, 231, 109);
+    --darkback-color: rgb(149,147,147);
+    --mainback-color: rgb(55,55,55);
+}
+body{
+    background-color: var(--darkback-color);
+    display: flex;
+    justify-content: center;
+}
+.main{
+    height: 600px;
+    width: 300px;
+    background-color: var(--mainback-color);
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px var(--white-color);
+}
+.mainnav{
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.theme{
+    height: 38px;
+    width: 80px;
+    box-shadow: -9px -6px 15px -10px white, 9px 12px 15px -8px black;
+    background-color: var(--mainback-color);
+    border-radius: 12px;
+    margin-top: 25px;
+    border: solid 1px var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sun{
+    height: 25px;
+    /* margin-right: 2px; */
+}
+.moon{
+    height: 25px;
+}
+.form-control{
+    /* border: none; */
+    height: 150px;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align-last: right;
+    color: var(--white-color);
+}
+input{
+    width: 225px;
+    margin-left: 35px;
+    font-family: 'Calculator', sans-serif;
+    background-color: var(--darkback-color);
+    border: solid 2px var(--alter-color);
+}
+.btn{
+    height: 50px;
+    width: 50px;
+    box-shadow: -9px -6px 15px -10px white, 9px 12px 15px -8px black;
+    background-color: var(--mainback-color);
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 25px;   
+    /* padding: 1px; */
+    margin-right: 12px;
+    margin-left: -5px;
+    color: var(--white-color);
+    cursor: pointer;
+    font-family: 'Calculator', sans-serif;      
+}
+.a0{
+    width: 110px;
+    margin-left:35px;
+    margin-top: 18px;
+}
+.a1{
+    margin-left: 35px;
+}
+.AC,.C,.divi,.ap,.mult,.minus,.add,.equal{
+    color: var(--green-color);
+}
+.thim,.thik{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.opa50 ,.sun{
+    opacity: 60%;
+    border-radius: 12px;
+}
+.tbg ,.sun{
+    background-color: var(--alter-color);
+}
+.circle {
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.flip{
+    animation: ani 2s linear infinite;
+}
+@keyframes ani{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
